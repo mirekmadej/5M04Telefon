@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5M04Telefon.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout HorizontalOptions="End">
+                <Label
+                    Text="numer"
+                    HorizontalTextAlignment="End"
+                    FontSize="48"
+                    x:Name="lblNumer"
+                    />
+                <Button
+                    ImageSource="del.png"
+                    Clicked="btnDelClicked"
+                    WidthRequest="70"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Margin="2"
+                    />
+            </HorizontalStackLayout>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                    Text="1"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btn1Clicked"
+                    />
+                <Button 
+                    Text="2"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btn2Clicked"
+                    />
+                <Button 
+                    Text="3"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btn3Clicked"
+                    />
+                <Button 
+                    Text="4"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btnNumberClicked"
+                    />
+                <Button 
+                    Text="5"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btnNumberClicked"
+                    />
+
+                <Button 
+                    Text="5"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btnNumberClicked"
+                    />
+
+                <Button 
+                    Text="6"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    FontSize="20"
+                    Margin="5"
+                    Clicked="btnNumberClicked"
+                    />
+
+            </Grid>
+            <Button Text="Zadzwoń"
+                    Clicked="btnCallClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    BackgroundColor="Green"
+                    />
+            <Label
+                Text="wynik:"
+                x:Name="lblWynik"
+                FontSize="20"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
